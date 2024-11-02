@@ -1,0 +1,16 @@
+# Node.js модули (исключите, если у вас есть папка node_modules)
+node_modules/
+
+# Конфигурация редактора VS Code
+.vscode/
+
+# Файлы сборки (если у вас есть сборщик, например, Webpack)
+dist/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Системные файлы (например, для macOS и Windows)
+.DS_Store
+Thumbs.db
