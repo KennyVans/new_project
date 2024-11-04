@@ -11,10 +11,6 @@
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'latobold';
     src: url('../fonts/lato-bold-webfont.eot');
@@ -27,10 +23,6 @@
     font-style: normal;
 
 }
-
-
-
-
 @font-face {
     font-family: 'latoregular';
     src: url('../fonts/lato-regular-webfont.eot');
@@ -43,8 +35,6 @@
     font-style: normal;
 
 }
-
-
 html{
     box-sizing: border-box;
 }
@@ -71,24 +61,27 @@ body{
   margin: 0 auto;
 }
 
+
+
+
+
+
+
+
 /* хедер */
-header{
-    padding-top: 20px;
-    background: #FFDAD5;
-    margin-bottom: 128px;
-}
 .header_inner{
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 5px;
+    position: absolute;
+    z-index: 2;
 }
 .menu{
     display: flex;
     gap: 60px;
     align-items: center;
 }
-
 .span-nav-menu{
     display: none;
     width: 40px;
@@ -127,6 +120,7 @@ header{
     display: flex;
     gap: 36px;
     align-items: center;
+    margin-left: 225px;
 }
 
 .btn-nav-menu{
@@ -177,6 +171,95 @@ header{
 
 
 
+/* первая секция, первый скрин */
+.hero-screen{
+    height: 100vh;
+    background-color: #FFDAD6;
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+}
+.site-left-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 189px;
+}
+.play-text::before{
+    content: '';
+    width: 84px;
+    height: 84px;
+    background-image: url(../images/play.svg);
+    background-repeat: no-repeat;
+    display: flex;
+}
+.play-text:hover:before{
+background-image: url(../images/play-hover.svg);
+}
+.play-text{
+    display: flex;
+    align-items: center;
+    font-family: 'latoregular';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1e212c;
+    margin-bottom: 24px;
+    max-width: 172px;
+}
+.play-text:hover{
+    color: #f75e05;
+}
+.play-title{
+    font-family: 'latoregular';
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    color: #1e212c;
+    max-width: 496px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+}
+.hero-screen-button{
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    margin-left: 15px;
+}
+.about-us-link{
+    font-family: 'latoregular';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    border: 1px solid #f75e05;
+    border-radius: 4px;
+    padding: 15px 40px;
+    color: #f75e05;
+}
+.about-us-link:hover{
+    color: #ffffff;
+    background-color: #f75e05;
+}
+.courses-link{
+    font-family: 'latoregular';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 325%;
+    letter-spacing: 0.03em;
+    color: #f75e05;
+}
+.courses-link:hover{
+    color: #ea9665;
+}
+.site-right-img::after{
+    content: '';
+    width: 602px;
+    height: 551px;
+    background-image: url(../images/hero-screen-images.svg);
+    background-repeat: no-repeat;
+    display: flex;
+}
 
 
 
@@ -186,6 +269,10 @@ header{
 
 
 
+
+
+
+/* адаптивы */
 @media (max-width: 1000px) {
     .nav-menu-list{
         gap: 25px;
