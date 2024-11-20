@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "latoblack";
+  src: url("../fonts/lato-black-webfont.eot");
+  src: url("../fonts/lato-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-black-webfont.woff2") format("woff2"), url("../fonts/lato-black-webfont.woff") format("woff"), url("../fonts/lato-black-webfont.ttf") format("truetype"), url("../fonts/lato-black-webfont.svg#latoblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "latobold";
+  src: url("../fonts/lato-bold-webfont.eot");
+  src: url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentyve"), url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.svg#latobold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "latoregular";
+  src: url("../fonts/lato-regular-webfont.eot");
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* адаптивы */
+@media (max-width: 1120px) {
+  .nav-menu-list {
+    gap: 20px;
+  }
+  .menu-link-registration {
+    gap: 25px;
+    margin-left: 100px;
+  }
+  .menu {
+    gap: 40px;
+  }
+}
+@media (max-width: 924px) {
+  .nav-menu-list {
+    gap: 15px;
+  }
+  .menu-link-registration {
+    gap: 15px;
+    margin-left: 80px;
+  }
+  .btn-nav-menu {
+    padding: 8px 10px;
+  }
+  .menu {
+    gap: 30px;
+  }
+}
+@media (max-width: 875px) {
+  .nav-menu-list {
+    gap: 10px;
+  }
+  .menu-link-registration {
+    gap: 10px;
+  }
+  .site-right-img {
+    display: none;
+  }
+  .svg-point {
+    display: none;
+  }
+  .play-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 790px) {
+  .nav-menu-list {
+    display: none;
+  }
+  .span-nav-menu {
+    display: flex;
+  }
+  nav {
+    order: -1;
+  }
+}
+@media (max-width: 660px) {
+  .btn-nav-menu {
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .menu-nav-registration {
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .hero-screen-button {
+    gap: 30px;
+  }
+  .site-left-right {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 461px) {
+  .btn-nav-menu {
+    display: none;
+  }
+  .menu-link-registration {
+    display: none;
+  }
+  .logo-link {
+    margin-left: 100px;
+  }
+  .menu {
+    gap: 0;
+  }
+  .hero-screen {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 340px) {
+  .logo-link {
+    margin-left: 50px;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "latoregular";
+  font-style: normal;
+  margin: 0;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Прелоадер */
+.preloader::before {
+  content: "";
+  width: 130px;
+  height: 22px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  animation: spin 2s linear infinite;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeOut 6s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* Прелоадер */
+/* первая секция, первый скрин */
+.hero-screen {
+  min-height: 100svh;
+  width: 100%;
+  background-color: #FFDAD6;
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+}
+
+.site-left-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 189px;
+}
+
+.play-text::before {
+  content: "";
+  width: 84px;
+  height: 84px;
+  background-image: url(../images/play.svg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.play-text:hover:before {
+  background-image: url(../images/play-hover.svg);
+}
+
+.play-text {
+  display: flex;
+  align-items: center;
+  font-family: "latoregular";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 24px;
+  max-width: 172px;
+}
+
+.play-text:hover {
+  color: #f75e05;
+}
+
+.play-title {
+  font-family: "latoregular";
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #1e212c;
+  max-width: 496px;
+  margin-bottom: 60px;
+  margin-left: 20px;
+}
+
+.hero-screen-button {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.about-us-link {
+  font-family: "latoregular";
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  border: 1px solid #f75e05;
+  border-radius: 4px;
+  padding: 15px 40px;
+  color: #f75e05;
+}
+
+.about-us-link:hover {
+  color: #ffffff;
+  background-color: #f75e05;
+}
+
+.courses-link {
+  font-family: "latoregular";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.courses-link:hover {
+  color: #f75e05;
+}
+
+.site-right-img::after {
+  content: "";
+  width: 602px;
+  height: 551px;
+  background-image: url(../images/hero-screen-images.svg);
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+/* все еще первая секция, только строчка с числами */
+.number-students {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.number-list {
+  font-family: "latoregular";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: #1e212c;
+  padding-right: 12px;
+}
+
+.number-students li {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1e212c;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style1.css.map */
