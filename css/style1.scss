@@ -1,12 +1,10 @@
 // ниже подключила сцсс
-@import "fonts";
-@import "media";
-@import "header";
+@import "_fonts";
 // ниже подключила на повторяющиеся цвета - переменные
 $orang_color: #f75e05;
 $white_color: #ffffff;
 $dark_color: #1e212c;
-// ниже максины на кнопки
+// ниже міксины на кнопки
 @mixin base_button{
     border: 1px solid $orang_color;
     background-color: $orang_color;
@@ -14,12 +12,12 @@ $dark_color: #1e212c;
     transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
     &:active {
         color: $orang_color;
-      }
-      &:hover {
+    }
+    &:hover {
         border: 1px solid $orang_color;
-        background-color: #2b633b3c;
+        background-color: #e5ccb1;
         color: $orang_color;
-      }
+    }
 }
 html{
     box-sizing: border-box;
@@ -42,21 +40,13 @@ body{
     font-style: normal;
     margin: 0;
 }
+@import '_header.scss';
 .container{
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 20px;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 /* Прелоадер */
-.preloader::before{
-    content: '';
-    width: 130px;
-    height: 22px;
-    background-image: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    display: flex;
-    animation: spin 2s linear infinite;
-}
 .preloader{
     position: fixed;
     top: 0;
@@ -69,16 +59,24 @@ body{
     justify-content: center;
     z-index: 100;
     animation: fadeOut 6s forwards;
+    &::before{
+        content: '';
+        width: 130px;
+        height: 22px;
+        background-image: url(../images/logo.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        animation: spin 2s linear infinite;
+    }
+    @keyframes spin{
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    @keyframes fadeOut{
+        0% { opacity: 1; }
+        100% { opacity: 0; visibility: hidden; }
+    }
 }
-@keyframes spin{
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
-}
-@keyframes fadeOut{
-    0% { opacity: 1; }
-    100% { opacity: 0; visibility: hidden; }
-}
-/* Прелоадер */
 /* первая секция, первый скрин */
 .hero-screen{
     min-height: 100svh;
@@ -87,110 +85,100 @@ body{
     position: relative;
     z-index: 1;
     padding-top: 200px;
-}
-.site-left-right{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 189px;
-}
-.play-text::before{
-    content: '';
-    width: 84px;
-    height: 84px;
-    background-image: url(../images/play.svg);
-    background-repeat: no-repeat;
-    display: flex;
-}
-.play-text:hover:before{
-background-image: url(../images/play-hover.svg);
-}
-.play-text{
-    display: flex;
-    align-items: center;
-    font-family: 'latoregular';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
-    color: $dark_color;
-    margin-bottom: 24px;
-    max-width: 172px;
-}
-.play-text:hover{
-    color: $orang_color;
-}
-.play-title{
-    font-family: 'latoregular';
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 130%;
-    letter-spacing: 0.02em;
-    color: $dark_color;
-    max-width: 496px;
-    margin-bottom: 60px;
-    margin-left: 20px;
-}
-.hero-screen-button{
-    display: flex;
-    gap: 64px;
-    align-items: center;
-    margin-left: 15px;
-}
-.about-us-link{
-    font-family: 'latoregular';
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    border: 1px solid $orang_color;
-    border-radius: 4px;
-    padding: 15px 40px;
-    color: $orang_color;
-}
-.about-us-link:hover{
-    color: $white_color;
-    background-color: $orang_color;
-}
-.courses-link{
-    font-family: 'latoregular';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 325%;
-    letter-spacing: 0.03em;
-    color: $white_color;
-}
-.courses-link:hover{
-    color: $orang_color;
-}
-.site-right-img::after{
-    content: '';
-    width: 602px;
-    height: 551px;
-    background-image: url(../images/hero-screen-images.svg);
-    background-repeat: no-repeat;
-    display: flex;
-}
-/* все еще первая секция, только строчка с числами */
-.number-students{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.number-list{
-    font-family: 'latoregular';
-    font-weight: 900;
-    font-size: 46px;
-    line-height: 130%;
-    text-align: center;
-    color: $dark_color;
-    padding-right: 12px;
-}
-.number-students li{
-    font-family: 'latoregular';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    color: $dark_color;
-    display: flex;
-    align-items: center;
+    .site-left-right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 189px;
+        flex-wrap: wrap;
+        .play-text{
+            display: flex;
+            align-items: center;
+            font-family: 'latoregular';
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 150%;
+            color: $dark_color;
+            margin-bottom: 24px;
+            max-width: 172px;
+            &:hover{
+                color: $orang_color;
+            }
+            &:hover:before{
+                background-image: url(../images/play-hover.svg);
+                }
+            &::before{
+                content: '';
+                width: 84px;
+                height: 84px;
+                background-image: url(../images/play.svg);
+                background-repeat: no-repeat;
+                display: flex;
+            }
+        }
+        .play-title{
+            font-family: 'latoregular';
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: $dark_color;
+            max-width: 496px;
+            margin-bottom: 60px;
+            margin-left: 20px;
+        }
+        .hero-screen-button{
+            display: flex;
+            gap: 64px;
+            align-items: center;
+            margin-left: 15px;
+            .about-us-link{
+                @include base_button;
+                font-family: 'latoregular';
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 0.03em;
+                border-radius: 4px;
+                padding: 15px 40px;
+                color: $orang_color;
+                background-color: $white_color;
+            }
+            .courses-link{
+                font-family: 'latoregular';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 325%;
+                letter-spacing: 0.03em;
+                color: $white_color;
+                &:hover{
+                    color: $orang_color;
+                }
+            }
+        }
+    }
+    /* все еще первая секция, только строчка с числами */
+    .number-students{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        .number-list{
+            font-family: 'latoregular';
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 130%;
+            text-align: center;
+            color: $dark_color;
+            padding-right: 12px;
+        }
+        li{
+            font-family: 'latoregular';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: $dark_color;
+            display: flex;
+            align-items: center;
+        }
+    }
 }

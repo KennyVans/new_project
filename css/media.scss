@@ -1,101 +1,114 @@
 /* адаптивы */
-@media (max-width: 1120px) {
-    .nav-menu-list{
-        gap: 20px;
-    }
-    .menu-link-registration{
-        gap: 25px;
-        margin-left: 100px;
-    }
-    .menu{
-        gap: 40px;
+@media only screen and (max-width: 1300px) {
+    .header_inner{
+        .menu-link-registration{
+            margin-left: 200px;
+        }
     }
 }
-// ниже на 924
-@media (max-width: 924px) {
-    .nav-menu-list{
-        gap: 15px;
-    }
-    .menu-link-registration{
-        gap: 15px;
-        margin-left: 80px;
-    }
-    .btn-nav-menu{
-        padding: 8px 10px;
-    }
-    .menu{
-        gap: 30px;
+@media only screen and (max-width: 1230px) {
+    .header_inner{
+        .menu-link-registration{
+            margin-left: 180px;
+        }
+        .menu nav .nav-menu-list{
+            gap: 20px;
+        }
     }
 }
-// ниже на 875
-@media (max-width: 875px) {
-    .nav-menu-list{
-        gap: 10px;
+@media only screen and (max-width: 1024px) {
+    .header_inner{
+        .menu-link-registration{
+            margin-left: 60px;
+        }
     }
-    .menu-link-registration{
-        gap: 10px;
-    }
-    .site-right-img{
-        display: none;
-    }
-    .svg-point{
-        display: none;
-    }
-    .play-title{
-        font-size: 40px;
-    }
-    
 }
-// ниже на 790
-@media (max-width: 790px) {
-  .nav-menu-list{
-    display: none;
-  }
-  .span-nav-menu{
-    display: flex;
-  }
-  nav{
-    order: -1;
-}
-}
-// ниже на 660
-@media (max-width: 660px) {
-    .btn-nav-menu{
-        font-weight: 700;
-        font-size: 13px;
-    }
-    .menu-nav-registration{
-        font-weight: 700;
-        font-size: 13px;
-    }
-    .hero-screen-button{
-        gap: 30px;
-    }
-    .site-left-right{
-        margin-bottom: 100px;
-    }
-  }
-//ниже на 461пх
-  @media (max-width: 461px) {
-    .btn-nav-menu{
-        display: none;
-    }
-    .menu-link-registration{
-        display: none;
-    }
-    .logo-link{
-        margin-left: 100px;
-    }
-    .menu{
-        gap: 0;
+@media only screen and (max-width: 768px) {
+    .header_inner{
+        .menu nav .nav-menu-list{
+            display: none;
+        }
+        .menu-link-registration {
+            margin-left: 150px;
+        }
+        .menu nav .span-nav-menu{
+            display: block;
+        }
+        .menu nav{
+            .phone{
+                display: block;
+                .active{
+                    display: block;
+                }
+            }
+        }
     }
     .hero-screen{
+        .site-left-right{
+            justify-content: center;
+            .play-text{
+                margin: 0 auto;
+                margin-bottom: 60px;
+            }
+            .play-title{
+                text-align: center;
+                margin-left: 0;
+            }
+            .hero-screen-button{
+                margin-left: 0;
+                justify-content: center;
+                margin-bottom: 60px;
+            }
+        }
+        .number-students{
+            flex-direction: column;
+            li{
+                margin-bottom: 20px;
+                .svg-point{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 568px){
+    .header_inner {
+        .menu-link-registration{
+            margin-left: 0;
+            .btn-nav-menu{
+                padding: 12px 15px;
+            }
+        }
+        .menu{
+            gap: 80px;
+        }
+    }
+    .site-right-img{
+        img{
+            max-width: 513px;
+            max-height: 551px;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .header_inner .menu-link-registration .btn-nav-menu{
+        display: none;
+    }
+    .hero-screen {
         padding-top: 100px;
+        .site-left-right .play-title{
+            font-size: 40px;
+        }
     }
-  }
-  @media (max-width: 340px) {
-    
-    .logo-link{
-        margin-left: 50px;
+    .site-right-img img {
+        max-width: 383px;
+        max-height: 371px;
     }
-  }
+}
+@media only screen and (max-width: 390px){
+    .header_inner {
+        .menu {
+            gap: 40px;
+    }
+}
+}
