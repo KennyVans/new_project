@@ -87,19 +87,22 @@
         }
     }
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 450px) {    
     .header_inner .menu-link-registration .btn-nav-menu{
         display: none;
     }
+    .site-right-img img {
+        max-width: 383px;
+        max-height: 371px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
     .hero-screen {
         padding-top: 100px;
         .site-left-right .play-title{
             font-size: 40px;
         }
-    }
-    .site-right-img img {
-        max-width: 383px;
-        max-height: 371px;
     }
 }
 @media only screen and (max-width: 391px){
