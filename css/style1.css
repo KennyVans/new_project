@@ -86,7 +86,7 @@ body {
     justify-content: center;
   }
   .hero-screen .site-left-right .play-text {
-    margin: 0 auto;
+    justify-content: center;
     margin-bottom: 60px;
   }
   .hero-screen .site-left-right .play-title {
@@ -136,6 +136,11 @@ body {
   .site-right-img img {
     max-width: 383px;
     max-height: 371px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .header_inner .menu {
+    gap: 50px;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -299,7 +304,6 @@ body {
   line-height: 150%;
   color: #1e212c;
   margin-bottom: 24px;
-  max-width: 172px;
 }
 .hero-screen .site-left-right .play-text:hover {
   color: #f75e05;
