@@ -1,4 +1,7 @@
 /* адаптивы */
+$orang_color: #f75e05;
+$white_color: #ffffff;
+$dark_color: #1e212c;
 @media only screen and (max-width: 1301px) {
     .header_inner{
         .menu-link-registration{
@@ -25,24 +28,59 @@
 }
 @media only screen and (max-width: 769px) {
     .header_inner{
-        .menu nav .nav-menu-list{
-            display: none;
-        }
-        .menu-link-registration {
-            margin-left: 150px;
-        }
-        .menu nav .span-nav-menu{
-            display: block;
-        }
-        .menu nav{
-            .phone{
+        .menu {
+            nav{
+            order: -1;
+            .nav-menu-list{
+                transform:  translateY(-100%);
+                position: absolute;
+                top: 0;
+                left: 240px;
+                width: 300px;
+                margin: 0 auto;
+                background-color: $orang_color;
                 display: block;
-                .active{
+                text-align: center;
+                padding: 30px 0;
+                transition: transform .6s ease;
+                border-radius: 40px;
+                .nav-menu-link{
+                color: $white_color;
+                &:hover{
+                    color: #e8a47c;
+                }
+                }
+                li{
+                    margin-bottom: 20px;
+                }
+                .menu-close::after{
+                    content: "";
+                    width: 13px;
+                    height: 13px;
                     display: block;
+                    /* используем марджин-райт вместо гап */
+                    background-image: url(../images/menu-close.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                }
+                .menu-list-open{
+                    transform:  translateY(0%);
                 }
             }
-        }
+            .menu-link-registration {
+                margin-left: 100px;
+            }
+            .span-nav-menu{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
     }
+    }
+}
     .hero-screen{
         .site-left-right{
             justify-content: center;
@@ -73,11 +111,27 @@
 }
 @media only screen and (max-width: 569px){
     .header_inner {
-        .menu-link-registration{
-            margin-left: 0;
-            .btn-nav-menu{
-                padding: 12px 15px;
+        .menu{
+            gap: 130px;
+            nav .nav-menu-list{
+                left: 110px;
             }
+            nav .mobile-menu-link-registration{
+                display: block;
+                li a{
+                    font-family: "latoregular";
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: $white_color;
+                    &:hover{
+                        color: #e8a47c;
+                    }
+                }
+            }
+        }
+        .menu-link-registration{
+            display: none;
         }
     }
     .site-right-img{
@@ -87,10 +141,10 @@
         }
     }
 }
-@media only screen and (max-width: 450px) {    
-    .header_inner .menu-link-registration .btn-nav-menu{
-        display: none;
-    }
+@media only screen and (max-width: 451px) {  
+    .header_inner .menu nav .nav-menu-list {
+        left: 60px;
+    }  
     .site-right-img img {
         max-width: 383px;
         max-height: 371px;
@@ -98,6 +152,9 @@
 }
 
 @media only screen and (max-width: 426px) {
+    .header_inner .menu nav .nav-menu-list {
+        left: 45px;
+    }
     .hero-screen {
         padding-top: 100px;
         .site-left-right .play-title{
@@ -109,7 +166,10 @@
     .header_inner {
         .menu {
             gap: 40px;
-    }
+            nav .nav-menu-list {
+                left: 45px;
+            }
+        }
     }
     .site-right-img img {
         max-width: 300px;

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+  <div class="menu--close"></div>
   <!-- Прелоадер -->
 <!-- <div class="preloader"></div> -->
  <!-- Прелоадер -->
@@ -21,8 +22,18 @@
         <a href="#" class="logo-link">
           <img src="images/logo.png" width="130px" height="22px" alt="logo">
         </a>
-        <nav>
+        <nav>          
+          <!-- ниже бургер -->
+          <button class="span-nav-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- конец бургер -->
           <ul class="nav-menu-list">
+            <li class="menu-close"></li>
             <li>
               <a href="#" class="nav-menu-link">
                 About Us
@@ -48,33 +59,22 @@
                 Contacts
               </a>
             </li>
+            <li>
+              <ul class="mobile-menu-link-registration">
+                <li>
+                  <a href="#" class="btn-nav-menu">
+                    Get consultation
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="menu-nav-registration">
+                    Log in / Register
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <!-- ниже бургер -->
-          <!-- <button class="span-nav-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button> -->
-          <!-- <div class="phone">
-            <div class="menu">
-              <div class="options">
-                <div class="option selected">Home</div>
-                <div class="option">About</div>
-                <div class="option">Products</div>
-                <div class="option">Contact</div>
-              </div>
-            </div>
-            <svg class="x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 400" height="400" width="220">
-              <g class="top-bars" stroke-width="4">
-                <path class="bar bar1" d="M 178,20 H 202" />
-                <path class="bar bar2" d="M 178,29 H 202" />
-              </g>
-            </svg>
-            <div class="menu-click-area" onclick="document.querySelector('.phone').classList.toggle('active')"></div>
-          </div> -->
-          <!-- конец бургер -->
+          
         </nav>
       </div>
 <!-- регистр -->
