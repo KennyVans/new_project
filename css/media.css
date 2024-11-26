@@ -101,6 +101,7 @@
   .Why_Createx_section_2 img {
     max-width: 500px;
     max-height: 365px;
+    margin-bottom: 35px;
   }
 }
 @media only screen and (max-width: 569px) {
@@ -135,9 +136,16 @@
   .header_inner .menu nav .nav-menu-list {
     left: 60px;
   }
+  .hero-screen {
+    margin-bottom: 70px;
+  }
   .site-right-img img {
     max-width: 383px;
     max-height: 371px;
+  }
+  .Why_Createx_section_2 img {
+    max-width: 300px;
+    max-height: 200px;
   }
 }
 @media only screen and (max-width: 426px) {
