@@ -74,7 +74,7 @@ body {
   }
 }
 @media only screen and (max-width: 769px) {
-  .header_inner nav {
+  .header_inner .menu nav {
     order: -1;
   }
   .header_inner .menu nav .nav-menu-list {
@@ -87,11 +87,15 @@ body {
     background-color: #f75e05;
     display: block;
     text-align: center;
-    padding: 50px 30px;
+    padding: 30px 0;
     transition: transform 0.6s ease;
+    border-radius: 40px;
   }
   .header_inner .menu nav .nav-menu-list .nav-menu-link {
     color: #ffffff;
+  }
+  .header_inner .menu nav .nav-menu-list .nav-menu-link:hover {
+    color: #e8a47c;
   }
   .header_inner .menu nav .nav-menu-list li {
     margin-bottom: 20px;
@@ -109,10 +113,10 @@ body {
     top: 20px;
     right: 20px;
   }
-  .header_inner .menu nav .nav-menu-list.menu-list-open {
+  .header_inner .menu nav .nav-menu-list .menu-list-open {
     transform: translateY(0%);
   }
-  .header_inner .menu-link-registration {
+  .header_inner .menu nav .menu-link-registration {
     margin-left: 100px;
   }
   .header_inner .menu nav .span-nav-menu {
@@ -145,19 +149,37 @@ body {
   .hero-screen .number-students li .svg-point {
     display: none;
   }
+  .Why_Createx_section_2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Why_Createx_section_2 img {
+    max-width: 500px;
+    max-height: 365px;
+  }
 }
 @media only screen and (max-width: 569px) {
   .header_inner .menu {
-    gap: 20px;
+    gap: 130px;
   }
   .header_inner .menu nav .nav-menu-list {
-    left: 60px;
+    left: 110px;
+  }
+  .header_inner .menu nav .mobile-menu-link-registration {
+    display: block;
+  }
+  .header_inner .menu nav .mobile-menu-link-registration li a {
+    font-family: "latoregular";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff;
+  }
+  .header_inner .menu nav .mobile-menu-link-registration li a:hover {
+    color: #e8a47c;
   }
   .header_inner .menu-link-registration {
-    margin-left: 10px;
-  }
-  .header_inner .menu-link-registration .btn-nav-menu {
-    padding: 12px 15px;
+    display: none;
   }
   .site-right-img img {
     max-width: 513px;
@@ -165,8 +187,8 @@ body {
   }
 }
 @media only screen and (max-width: 451px) {
-  .header_inner .menu-link-registration .btn-nav-menu {
-    display: none;
+  .header_inner .menu nav .nav-menu-list {
+    left: 60px;
   }
   .site-right-img img {
     max-width: 383px;
@@ -174,6 +196,9 @@ body {
   }
 }
 @media only screen and (max-width: 426px) {
+  .header_inner .menu nav .nav-menu-list {
+    left: 45px;
+  }
   .hero-screen {
     padding-top: 100px;
   }
@@ -187,9 +212,6 @@ body {
   }
   .header_inner .menu nav .nav-menu-list {
     left: 45px;
-  }
-  .header_inner .menu-link-registration .menu-nav-registration {
-    display: none;
   }
   .site-right-img img {
     max-width: 300px;
@@ -247,6 +269,7 @@ body {
 }
 .header_inner .menu-link-registration .btn-nav-menu {
   border: 1px solid #f75e05;
+  border-radius: 4px;
   background-color: #f75e05;
   color: #ffffff;
   transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
@@ -255,9 +278,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  border-radius: 4px;
   padding: 15px 40px;
-  border: 1px solid transparent;
   display: block;
 }
 .header_inner .menu-link-registration .btn-nav-menu:active {
@@ -364,6 +385,7 @@ body {
   position: relative;
   z-index: 1;
   padding-top: 200px;
+  margin-bottom: 170px;
   /* все еще первая секция, только строчка с числами */
 }
 .hero-screen .site-left-right {
@@ -416,6 +438,7 @@ body {
 }
 .hero-screen .site-left-right .hero-screen-button .about-us-link {
   border: 1px solid #f75e05;
+  border-radius: 4px;
   background-color: #f75e05;
   color: #ffffff;
   transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
@@ -470,4 +493,73 @@ body {
   color: #1e212c;
   display: flex;
   align-items: center;
+}
+
+.Why_Createx_section_2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 178px;
+}
+.Why_Createx_section_2 .Why_Createx_text_right {
+  max-width: 390px;
+}
+.Why_Createx_section_2 .Why_Createx_text_right div {
+  margin-bottom: 48px;
+}
+.Why_Createx_section_2 .Why_Createx_text_right .Why_Createx_text {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.Why_Createx_section_2 .Why_Createx_text_right .Why_Createx_title {
+  font-family: "latoblack";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 40px;
+}
+.Why_Createx_section_2 .Why_Createx_text_right .Why_Createx_text_and_svg {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  display: flex;
+  padding-bottom: 12px;
+}
+.Why_Createx_section_2 .Why_Createx_text_right .Why_Createx_text_and_svg::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 18px;
+  margin-right: 16px;
+  background-image: url(../images/check-section-2.svg);
+  background-repeat: no-repeat;
+}
+.Why_Createx_section_2 .more-about-button {
+  border: 1px solid #f75e05;
+  border-radius: 4px;
+  background-color: #f75e05;
+  color: #ffffff;
+  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
+  padding: 16px 32px;
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.Why_Createx_section_2 .more-about-button:active {
+  color: #f75e05;
+}
+.Why_Createx_section_2 .more-about-button:hover {
+  border: 1px solid #f75e05;
+  background-color: #e5ccb1;
+  color: #f75e05;
 }/*# sourceMappingURL=style1.css.map */

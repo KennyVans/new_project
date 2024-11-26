@@ -7,6 +7,7 @@ $dark_color: #1e212c;
 // ниже міксины на кнопки
 @mixin base_button{
     border: 1px solid $orang_color;
+    border-radius: 4px;
     background-color: $orang_color;
     color: $white_color;
     transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
@@ -106,6 +107,7 @@ body{
     position: relative;
     z-index: 1;
     padding-top: 200px;
+    margin-bottom: 170px;
     .site-left-right{
         display: flex;
         align-items: center;
@@ -200,5 +202,62 @@ body{
             display: flex;
             align-items: center;
         }
+    }
+}
+.Why_Createx_section_2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 178px;
+    .Why_Createx_text_right{
+        div{
+            margin-bottom: 48px;
+        }
+        max-width: 390px;
+        .Why_Createx_text{
+            font-family: 'latobold';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #1e212c;
+            margin-bottom: 8px;
+        }
+        .Why_Createx_title{
+            font-family: 'latoblack';
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 130%;
+            color: #1e212c;
+            margin-bottom: 40px;
+        }
+        .Why_Createx_text_and_svg{
+            font-family: 'latoregular';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #424551;
+            display: flex;
+            padding-bottom: 12px;
+            &::before{
+                content: "";
+                display: block;
+                width: 23px;
+                height: 18px;
+                margin-right: 16px;
+                background-image: url(../images/check-section-2.svg);
+                background-repeat: no-repeat;
+                // background-position: center;
+            }
+        }
+    }
+    .more-about-button{
+        @include base_button;
+        padding: 16px 32px;
+        font-family: 'latobold';
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        color: $white_color;
     }
 }
