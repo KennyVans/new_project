@@ -65,7 +65,6 @@ body{
     }
     .menu--close.menu--open{
         display: block;
-
     }
     // делаю фон для всплывающего меню 
 /* Прелоадер */
@@ -184,6 +183,7 @@ body{
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        padding-bottom: 82px;
         .number-list{
             font-family: 'latoregular';
             font-weight: 900;
@@ -204,6 +204,7 @@ body{
         }
     }
 }
+// вторая секция
 .Why_Createx_section_2{
     display: flex;
     justify-content: space-between;
@@ -259,5 +260,277 @@ body{
         font-size: 14px;
         letter-spacing: 0.04em;
         color: $white_color;
+    }
+}
+// 3 секция
+.Featured_Courses{
+    margin-bottom: 180px;
+    h4{
+        font-family: 'latobold';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #1e212c;
+        margin-bottom: 8px;
+    }
+    .Featured_Courses_button{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+        h3{
+            font-family: 'latoblack';
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 130%;
+            color: #1e212c;
+        }
+        .all_courses_btn{
+            @include base_button;
+            font-family: 'latobold';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 325%;
+            letter-spacing: 0.03em;
+            text-align: center;
+            background: transparent;
+            color: $orang_color;
+            width: 202px;
+            height: 52px;
+        }
+    }
+}
+.teachers_inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .teachers_item_img{
+        display: flex;
+        align-items: center;
+        border: 1px solid #e5e8ed;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.1), 0 80px 80px -20px rgba(154, 156, 165, 0.16);
+        background: #fff;
+        max-width: 590px;
+        width: 100%;
+        margin-bottom: 30px;
+        .teacher_item{
+            display: flex;
+            flex-direction: column;
+            padding: 0 32px;
+// ниже цвета для названий-ссылки-у каждой свой цвет
+            .Marketing_link{
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #fff;
+                background: #03cea4;
+                border-radius: 4px;
+                width: 79px;
+                text-align: center;
+                margin-bottom: 20px;
+                border: 1px solid transparent;
+                &:hover{
+                    background: $orang_color;
+                }
+            }
+            .Management_link{
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #fff;
+                background: #5a87fc;
+                border-radius: 4px;
+                width: 97px;
+                text-align: center;
+                margin-bottom: 20px;
+                &:hover{
+                    background: $orang_color;
+                }
+            }
+            .HR_link{
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #fff;
+                background: #f89828;
+                border-radius: 4px;
+                width: 112px;
+                text-align: center;
+                margin-bottom: 20px;
+                &:hover{
+                    background: $orang_color;
+                }
+            }
+            .Design_link{
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #fff;
+                background: #f52f6e;
+                border-radius: 4px;
+                width: 112px;
+                text-align: center;
+                margin-bottom: 20px;
+                &:hover{
+                    background: $orang_color;
+                }
+            }
+            .name_course_link{
+                font-family: 'latobold';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 150%;
+                color: #1e212c;
+                margin-bottom: 20px;
+                &:hover{
+                    color: $orang_color;
+                }
+            }
+        }
+        h4{
+            font-family: 'latobold';
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            color: #ff4242;
+            .name_teacher{
+                color: #787a80;
+                margin-left: 2px;
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                text-transform: none; /* Убедитесь, что регистр не меняется */
+                border: none;
+                span{
+                    border: 1px solid #787a80;
+                    width: 16px;
+                    height: 1px;
+                    transform: rotate(-90deg);
+                    border-radius: 2px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
+// 4 секция 
+.Our_benefits{
+    margin-bottom: 120px;
+    h5{
+        font-family: 'latobold';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #1e212c;
+        margin-bottom: 8px;
+    }
+    h4{
+        font-family: 'latoblack';
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 130%;
+        text-align: center;
+        color: #1e212c;
+        margin-bottom: 60px;
+    }
+    .benefits-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        li{ 
+            a{
+            font-family: 'latobold';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #9a9ca5;
+            text-align: center;
+            border: 1px solid  transparent;
+            border-radius: 4px;
+            padding: 10px 68px;
+            display: flex;
+            align-items: center;
+                &:hover{
+                    border: 1px solid  #ff3f3a;
+                    color: #ff3f3a;
+                }
+                &::before{
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    display: block;
+                    margin-right: 8px;
+                    /* используем марджин-райт вместо гап */
+                    background-repeat: no-repeat;
+                }
+            }
+            &:nth-child(1) {
+                a::before{
+                    background-image: url(../images/1-gray.svg);
+                }
+                a:hover::before{
+                    background-image: url(../images/1-orang.svg);
+                }
+            }
+            &:nth-child(2) {
+                a::before{
+                    background-image: url(../images/2-grey.svg);
+                }
+                a:hover::before{
+                    background-image: url(../images/2-orang.svg);
+                }
+            }
+            &:nth-child(3) {
+                a::before{
+                    background-image: url(../images/3-gray.svg);
+                }
+                a:hover::before{
+                    background-image: url(../images/3-orang.svg);
+                }
+            }
+            &:nth-child(4) {
+                a::before{
+                    background-image: url(../images/4-gray.svg);
+                }
+                a:hover::before{
+                    background-image: url(../images/4-orang.svg);
+                }
+            }
+        }
+    }
+    .practicing-tutors_img{
+        display: flex;justify-content: space-between;
+        align-items: center;
+        .practicing-tutors_left{
+            max-width: 488px;
+            h3{
+                font-family: 'latoblack';
+                font-weight: 900;
+                font-size: 32px;
+                line-height: 130%;
+                color: #1e212c;
+                margin-bottom: 24px;
+            }
+            p{
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #424551;
+            }
+        }
     }
 }
