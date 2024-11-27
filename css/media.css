@@ -2,12 +2,12 @@
 /* адаптивы */
 @media only screen and (max-width: 1301px) {
   .header_inner .menu-link-registration {
-    margin-left: 190px;
+    margin-left: 140px;
   }
 }
 @media only screen and (max-width: 1231px) {
   .header_inner .menu-link-registration {
-    margin-left: 180px;
+    margin-left: 120px;
   }
   .header_inner .menu nav .nav-menu-list {
     gap: 20px;
@@ -39,6 +39,10 @@
   }
   .Our_benefits .benefits-item li {
     padding-bottom: 30px;
+  }
+  .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -128,6 +132,10 @@
   .Our_benefits .practicing-tutors_img .practicing-tutors_left p {
     margin-bottom: 20px;
   }
+  .Our_Events .events .Event_details {
+    gap: 25px;
+    padding: 32px 15px;
+  }
 }
 @media only screen and (max-width: 569px) {
   .header_inner .menu {
@@ -180,6 +188,17 @@
     max-width: 400px;
     max-height: 400px;
   }
+  .Our_Events .events .Event_details {
+    gap: 5px;
+    padding: 32px 15px;
+    align-items: center;
+  }
+  .Our_Events .events .Event_details h4 {
+    display: none;
+  }
+  .Our_Events .events .Event_details .Event_details_date {
+    display: none;
+  }
 }
 @media only screen and (max-width: 451px) {
   .header_inner .menu nav .nav-menu-list {
@@ -195,6 +214,22 @@
   .Why_Createx_section_2 img {
     max-width: 300px;
     max-height: 200px;
+  }
+  .Why_Createx_section_2 .Why_Createx_text_right {
+    text-align: center;
+  }
+  .Our_Events .events .Event_details {
+    flex-direction: column;
+  }
+  .Our_Events .events .Event_details .Event_details_name {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .Our_Events .events .Event_details .Event_details_name h5 {
+    text-align: center;
+  }
+  .Our_Events .events .all_events {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 426px) {

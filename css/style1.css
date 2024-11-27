@@ -88,6 +88,13 @@ body {
   .teachers_inner {
     justify-content: center;
   }
+  .Our_benefits .benefits-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Our_benefits .benefits-item li {
+    padding-bottom: 30px;
+  }
 }
 @media only screen and (max-width: 769px) {
   .header_inner .menu nav {
@@ -169,6 +176,13 @@ body {
     max-width: 500px;
     max-height: 365px;
   }
+  .Our_benefits .practicing-tutors_img {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Our_benefits .practicing-tutors_img .practicing-tutors_left p {
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (max-width: 569px) {
   .header_inner .menu {
@@ -196,6 +210,34 @@ body {
   .site-right-img img {
     max-width: 513px;
     max-height: 551px;
+  }
+  .Featured_Courses .Featured_Courses_button h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .Featured_Courses h4 {
+    margin-bottom: 0;
+  }
+  .Featured_Courses .teachers_inner .teachers_item_img {
+    flex-direction: column;
+    width: 70%;
+    padding: 20px 0;
+  }
+  .Featured_Courses .teachers_inner .teachers_item_img img {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .Featured_Courses .teachers_inner .teachers_item_img .teacher_item {
+    align-items: center;
+    text-align: center;
+  }
+  .practicing-tutors_img img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 451px) {
@@ -235,6 +277,10 @@ body {
   .site-right-img img {
     max-width: 300px;
     max-height: 300px;
+  }
+  .practicing-tutors_img img {
+    max-width: 350px;
+    max-height: 350px;
   }
 }
 .header_inner {
@@ -647,7 +693,7 @@ body {
   align-items: center;
   border: 1px solid #e5e8ed;
   border-radius: 4px;
-  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.1), 0 80px 80px -20px rgba(154, 156, 165, 0.16);
+  box-shadow: 0 1px 2px rgba(30, 33, 44, 0.02), 0 4px 6px -3px rgba(154, 156, 165, 0.04), 0 12px 15px -6px rgba(154, 156, 165, 0.05), 0 30px 50px -12px rgba(154, 156, 165, 0.018);
   background: #fff;
   max-width: 590px;
   width: 100%;
@@ -857,4 +903,152 @@ body {
   font-size: 16px;
   line-height: 160%;
   color: #424551;
+}
+
+.Our_Events {
+  margin-bottom: 120px;
+  background-color: #FFDAD5;
+}
+.Our_Events .events {
+  padding: 80px 0;
+  text-align: center;
+}
+.Our_Events .events .events_title {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.Our_Events .events h3 {
+  font-family: "latoblack";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 60px;
+}
+.Our_Events .events .Event_details {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 40px;
+  background-color: #fff;
+  margin-bottom: 24px;
+}
+.Our_Events .events .Event_details:nth-last-child(2) {
+  margin-bottom: 60px;
+}
+.Our_Events .events .Event_details:hover {
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.05), 0 12px 10px -6px rgba(255, 63, 58, 0.08), 0 30px 24px -10px rgba(255, 63, 58, 0.1), 0 80px 80px -20px rgba(255, 63, 58, 0.16);
+  background: #fff;
+}
+.Our_Events .events .Event_details h4 {
+  font-family: "latoblack";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #ff3f3a;
+}
+.Our_Events .events .Event_details .Event_details_date h4 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 4px;
+  text-align: left;
+}
+.Our_Events .events .Event_details .Event_details_date h5 {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+}
+.Our_Events .events .Event_details .Event_details_name {
+  max-width: 767px;
+  width: 100%;
+  text-align: left;
+}
+.Our_Events .events .Event_details .Event_details_name p {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 4px;
+}
+.Our_Events .events .Event_details .Event_details_name h5 {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #787a80;
+  text-align: left;
+}
+.Our_Events .events .Event_details .event_btn {
+  border: 1px solid #f75e05;
+  border-radius: 4px;
+  background-color: #f75e05;
+  color: #ffffff;
+  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 314%;
+  letter-spacing: 0.04em;
+  color: #f75e05;
+  background: #ffffff;
+  width: 136px;
+  height: 44px;
+}
+.Our_Events .events .Event_details .event_btn:active {
+  color: #f75e05;
+}
+.Our_Events .events .Event_details .event_btn:hover {
+  border: 1px solid #f75e05;
+  background-color: #e5ccb1;
+  color: #f75e05;
+}
+.Our_Events .events .Event_details .event_btn:hover {
+  background-color: #f75e05;
+  color: #ffffff;
+}
+.Our_Events .events .all_events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.Our_Events .events .all_events h5 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.Our_Events .events .all_events .all_events_btn {
+  border: 1px solid #f75e05;
+  border-radius: 4px;
+  background-color: #f75e05;
+  color: #ffffff;
+  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 325%;
+  letter-spacing: 0.03em;
+  padding: 0 40px;
+}
+.Our_Events .events .all_events .all_events_btn:active {
+  color: #f75e05;
+}
+.Our_Events .events .all_events .all_events_btn:hover {
+  border: 1px solid #f75e05;
+  background-color: #e5ccb1;
+  color: #f75e05;
 }/*# sourceMappingURL=style1.css.map */

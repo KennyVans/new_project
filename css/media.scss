@@ -4,13 +4,13 @@ $white_color: #ffffff;
 $dark_color: #1e212c;
 @media only screen and (max-width: 1301px) {
     .header_inner .menu-link-registration{
-            margin-left: 190px;
+            margin-left: 140px;
         }
     }
 @media only screen and (max-width: 1231px) {
     .header_inner{
         .menu-link-registration{
-            margin-left: 180px;
+            margin-left: 120px;
         }
         .menu nav .nav-menu-list{
             gap: 20px;
@@ -48,6 +48,11 @@ $dark_color: #1e212c;
             padding-bottom: 30px;
         }
     }
+    .owl-carousel .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+// по центру поставила овл карусель
 }
 @media only screen and (max-width: 769px) {
     .header_inner{
@@ -144,6 +149,10 @@ $dark_color: #1e212c;
             margin-bottom: 20px;
         }
     }
+    .Our_Events .events .Event_details{
+        gap: 25px;
+        padding: 32px 15px;
+    }
 }
 @media only screen and (max-width: 569px){
     .header_inner {
@@ -202,6 +211,17 @@ $dark_color: #1e212c;
         max-width: 400px;
         max-height: 400px;
     }
+    .Our_Events .events .Event_details {
+        gap: 5px;
+        padding: 32px 15px;
+        align-items: center;
+        h4{
+            display: none;
+        }
+        .Event_details_date{
+            display: none;
+        }
+    }
 }
 @media only screen and (max-width: 451px) {  
     .header_inner .menu nav .nav-menu-list {
@@ -218,6 +238,24 @@ $dark_color: #1e212c;
         img{
             max-width: 300px;
             max-height: 200px;
+        }
+        .Why_Createx_text_right {
+            text-align: center;
+        }
+    }
+    .Our_Events .events{
+        .Event_details{
+            flex-direction: column;
+            .Event_details_name{
+                margin-bottom: 10px;
+                text-align: center;
+                h5{
+                    text-align: center;
+                }
+            }
+        }
+        .all_events{
+            flex-direction: column;
         }
     }
 }

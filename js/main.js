@@ -12,3 +12,19 @@ menuClose.addEventListener('click',()=>{
     navMenuList.classList.remove('menu-list-open')
     menuShadow.classList.remove('menu--open')
 });
+// owl каручель ниже
+$('.owl-carousel')
+.owlCarousel({ 
+    autoplay:true, 
+    autoplayTimeout: 5500, 
+    autoplaySpeed: 3000, 
+    loop: true, 
+    responsive:{ 
+        0:{ 
+            items:1 
+        }, 
+        1100:{ 
+            items:2
+        } 
+    } 
+})
