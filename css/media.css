@@ -44,6 +44,33 @@
     display: flex;
     justify-content: center;
   }
+  .Certificate .Certificate_img {
+    width: 500px;
+    height: 320px;
+  }
+  .our_team .team_inner {
+    padding-top: 100px;
+  }
+  .our_team .team_inner .card_teachers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our_team .team_inner .card_teachers .teachers_inner_card {
+    margin-bottom: 40px;
+  }
+  .our_team .team_inner .card_teachers .teachers_inner_card img {
+    margin-bottom: 8px;
+  }
+  .our_team .team_inner .card_teachers .gradient {
+    height: 82.5%;
+  }
+  .our_team .team_inner .title_and_arrow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .our_team .team_inner h5 {
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 769px) {
   .header_inner .menu nav {
@@ -136,6 +163,19 @@
     gap: 25px;
     padding: 32px 15px;
   }
+  .Certificate .Certificate_img {
+    width: 385px;
+    height: 285px;
+  }
+  .Certificate .Certificate_createx {
+    width: 330px;
+  }
+  .Certificate .Certificate_createx h4 {
+    font-size: 39px;
+  }
+  .Certificate .Certificate_createx p {
+    margin-bottom: 65px;
+  }
 }
 @media only screen and (max-width: 569px) {
   .header_inner .menu {
@@ -199,6 +239,15 @@
   .Our_Events .events .Event_details .Event_details_date {
     display: none;
   }
+  .Certificate {
+    justify-content: center;
+    text-align: center;
+    padding-top: 300px;
+  }
+  .Certificate .Certificate_img {
+    right: 73px;
+    bottom: 397px;
+  }
 }
 @media only screen and (max-width: 451px) {
   .header_inner .menu nav .nav-menu-list {
@@ -231,6 +280,9 @@
   .Our_Events .events .all_events {
     flex-direction: column;
   }
+  .Certificate .Certificate_img {
+    right: 16px;
+  }
 }
 @media only screen and (max-width: 426px) {
   .header_inner .menu nav .nav-menu-list {
@@ -242,10 +294,15 @@
   .hero-screen .site-left-right .play-title {
     font-size: 40px;
   }
+  .Certificate .Certificate_img {
+    right: 11px;
+    width: 350px;
+    height: 245px;
+  }
 }
 @media only screen and (max-width: 391px) {
   .header_inner .menu {
-    gap: 40px;
+    gap: 70px;
   }
   .header_inner .menu nav .nav-menu-list {
     left: 45px;
@@ -257,5 +314,8 @@
   .practicing-tutors_img img {
     max-width: 350px;
     max-height: 350px;
+  }
+  .Certificate .Certificate_img {
+    right: 0;
   }
 }/*# sourceMappingURL=media.css.map */

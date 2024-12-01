@@ -57,12 +57,12 @@ body {
 /* адаптивы */
 @media only screen and (max-width: 1301px) {
   .header_inner .menu-link-registration {
-    margin-left: 190px;
+    margin-left: 140px;
   }
 }
 @media only screen and (max-width: 1231px) {
   .header_inner .menu-link-registration {
-    margin-left: 180px;
+    margin-left: 120px;
   }
   .header_inner .menu nav .nav-menu-list {
     gap: 20px;
@@ -94,6 +94,10 @@ body {
   }
   .Our_benefits .benefits-item li {
     padding-bottom: 30px;
+  }
+  .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -183,6 +187,10 @@ body {
   .Our_benefits .practicing-tutors_img .practicing-tutors_left p {
     margin-bottom: 20px;
   }
+  .Our_Events .events .Event_details {
+    gap: 25px;
+    padding: 32px 15px;
+  }
 }
 @media only screen and (max-width: 569px) {
   .header_inner .menu {
@@ -235,9 +243,16 @@ body {
     max-width: 400px;
     max-height: 400px;
   }
-  .owl-carousel .owl-item {
-    display: flex;
-    justify-content: center;
+  .Our_Events .events .Event_details {
+    gap: 5px;
+    padding: 32px 15px;
+    align-items: center;
+  }
+  .Our_Events .events .Event_details h4 {
+    display: none;
+  }
+  .Our_Events .events .Event_details .Event_details_date {
+    display: none;
   }
 }
 @media only screen and (max-width: 451px) {
@@ -254,6 +269,22 @@ body {
   .Why_Createx_section_2 img {
     max-width: 300px;
     max-height: 200px;
+  }
+  .Why_Createx_section_2 .Why_Createx_text_right {
+    text-align: center;
+  }
+  .Our_Events .events .Event_details {
+    flex-direction: column;
+  }
+  .Our_Events .events .Event_details .Event_details_name {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .Our_Events .events .Event_details .Event_details_name h5 {
+    text-align: center;
+  }
+  .Our_Events .events .all_events {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -906,7 +937,7 @@ body {
 }
 
 .Our_Events {
-  margin-bottom: 120px;
+  margin-bottom: 104px;
   background-color: #FFDAD5;
 }
 .Our_Events .events {
@@ -1051,4 +1082,201 @@ body {
   border: 1px solid #f75e05;
   background-color: #e5ccb1;
   color: #f75e05;
+}
+
+.Certificate {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 8;
+}
+.Certificate .Certificate_createx {
+  max-width: 397px;
+}
+.Certificate .Certificate_createx h5 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.Certificate .Certificate_createx h4 {
+  font-family: "latoblack";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 48px;
+}
+.Certificate .Certificate_createx p {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 32px;
+}
+.Certificate .Certificate_img {
+  position: absolute;
+  right: 0;
+}
+
+.our_team {
+  background-color: #F4F5F6;
+  width: 100%;
+  position: relative;
+  z-index: 7;
+  top: 119px;
+}
+.our_team .team_inner {
+  padding-top: 166px;
+}
+.our_team .team_inner h5 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.our_team .team_inner .title_and_arrow {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.our_team .team_inner .title_and_arrow h4 {
+  font-family: "latoblack";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+}
+.our_team .team_inner .title_and_arrow .arrow_our_team {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  align-items: center;
+}
+.our_team .team_inner .title_and_arrow .arrow_our_team .arrow_left::after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/arrow_w_left.svg);
+  background-repeat: no-repeat;
+}
+.our_team .team_inner .title_and_arrow .arrow_our_team .arrow_left:hover::after {
+  background-image: url(../images/arrow_orange_right.svg);
+}
+.our_team .team_inner .title_and_arrow .arrow_our_team .arrow_right::after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/arrow_w_right.svg);
+  background-repeat: no-repeat;
+}
+.our_team .team_inner .title_and_arrow .arrow_our_team .arrow_right:hover::after {
+  background-image: url(../images/arrow_r_orange.svg);
+}
+.our_team .team_inner .card_teachers {
+  display: flex;
+  justify-content: space-between;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card {
+  position: relative;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .fb_icon::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/Facebook-no-hover.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 300px;
+  left: 181px;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .fb_icon:hover::after {
+  background-image: url(../images/Facebook-hover.svg);
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .inst_icon::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/Instagram-no-hover.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 300px;
+  left: 213px;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .inst_icon:hover::after {
+  background-image: url(../images/Instagram-hover.svg);
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .link_in_icon::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/Linked-In-no-hover.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 300px;
+  left: 245px;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .link_in_icon:hover::after {
+  background-image: url(../images/hover-link.svg);
+}
+.our_team .team_inner .card_teachers .teachers_inner_card img {
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card h4 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #424551;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card h5 {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: #787a80;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.our_team .team_inner .card_teachers .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 81%;
+  background: linear-gradient(180deg, rgba(30, 33, 44, 0) 43.9%, rgba(30, 33, 44, 0.92) 91.49%, #1E212C 100%);
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 4px;
+}
+.our_team .team_inner .card_teachers .teachers_inner_card:hover .gradient {
+  opacity: 1;
 }/*# sourceMappingURL=style1.css.map */
