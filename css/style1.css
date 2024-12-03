@@ -157,6 +157,15 @@ body {
   .Our_blog_inner .card_blog_item .card_blog_inner {
     margin-bottom: 20px;
   }
+  .Our_blog_inner .card_blog_item .card_blog_inner .card_blog_title {
+    justify-content: center;
+  }
+  .Our_blog_inner .card_blog_item .card_blog_inner .Listen_link {
+    justify-content: center;
+  }
+  .footer_part_1 .footer_item .footer_list {
+    gap: 25px;
+  }
 }
 @media only screen and (max-width: 769px) {
   .header_inner .menu nav {
@@ -262,6 +271,28 @@ body {
   .Certificate .Certificate_createx p {
     margin-bottom: 65px;
   }
+  .students_say .owl-carousel.owl-carousel-second .owl-dots {
+    left: 255px;
+  }
+  .students_say .owl-carousel.owl-carousel-second.owl-loaded.owl-drag {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .students_say .owl-carousel.owl-carousel-second .carusel_item .carusel_inner p {
+    width: 90%;
+  }
+  .footer_part_1 .footer_item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer_part_1 .footer_item .footer_title {
+    margin-bottom: 50px;
+  }
+  .footer_part_1 .footer_item .footer_list {
+    gap: 60px;
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (max-width: 569px) {
   .header_inner .menu {
@@ -334,6 +365,15 @@ body {
     right: 73px;
     bottom: 397px;
   }
+  .students_say .owl-carousel.owl-carousel-second .owl-dots {
+    left: 133px;
+  }
+  .email_for_Subscribe .img_subscribe_1 {
+    display: none;
+  }
+  .email_for_Subscribe .img_subscribe_2 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 451px) {
   .header_inner .menu nav .nav-menu-list {
@@ -369,6 +409,9 @@ body {
   .Certificate .Certificate_img {
     right: 16px;
   }
+  .students_say .owl-carousel.owl-carousel-second .owl-dots {
+    left: 78px;
+  }
 }
 @media only screen and (max-width: 426px) {
   .header_inner .menu nav .nav-menu-list {
@@ -384,6 +427,13 @@ body {
     right: 11px;
     width: 350px;
     height: 245px;
+  }
+  .footer_part_1 .footer_item .footer_list {
+    flex-direction: column;
+  }
+  .footer_part_2 .reserved_inner {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 391px) {
@@ -403,6 +453,16 @@ body {
   }
   .Certificate .Certificate_img {
     right: 0;
+  }
+  .students_say .owl-carousel.owl-carousel-second .carusel_item .carusel_inner p {
+    width: 75%;
+  }
+  .students_say .owl-carousel.owl-carousel-second .owl-dots {
+    left: 52px;
+  }
+  .card_blog_inner img {
+    max-width: 350px;
+    height: 250px;
   }
 }
 .header_inner {

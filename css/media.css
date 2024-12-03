@@ -357,6 +357,13 @@
   .students_say .owl-carousel.owl-carousel-second .owl-dots {
     left: 78px;
   }
+  .footer_part_1 .footer_item .footer_list {
+    flex-direction: column;
+  }
+  .footer_part_2 .reserved_inner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 426px) {
   .header_inner .menu nav .nav-menu-list {
@@ -372,13 +379,6 @@
     right: 11px;
     width: 350px;
     height: 245px;
-  }
-  .footer_part_1 .footer_item .footer_list {
-    flex-direction: column;
-  }
-  .footer_part_2 .reserved_inner {
-    flex-direction: column;
-    align-items: center;
   }
 }
 @media only screen and (max-width: 391px) {
