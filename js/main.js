@@ -28,6 +28,22 @@ $('.owl-carousel.first-carousel')
         } 
     } 
 })
+// стайл для  карусели с учителями 
+// $(".owl-carousel.third-carousel").owlCarousel({
+//     loop: true,     
+//     autoplay: true, 
+//     autoplayTimeout: 4000,
+//     autoplaySpeed: 3000,
+//     nav: true,      
+//     responsive: { 
+//         0:{ 
+//             items:1
+//         }, 
+//         1100:{ 
+//             items:1
+//         } 
+//     } 
+// });
 // стайл для второй карусели 
 $(".owl-carousel.owl-carousel-second").owlCarousel({
     loop: true,     

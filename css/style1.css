@@ -67,6 +67,12 @@ body {
   .header_inner .menu nav .nav-menu-list {
     gap: 20px;
   }
+  .students_say .owl-carousel.owl-carousel-second .owl-nav .owl-prev span {
+    right: 1025px;
+  }
+  .students_say .owl-carousel.owl-carousel-second .owl-nav .owl-next span {
+    left: 1025px;
+  }
 }
 @media only screen and (max-width: 1025px) {
   .header_inner .menu-link-registration {
@@ -125,6 +131,31 @@ body {
   }
   .our_team .team_inner h5 {
     text-align: center;
+  }
+  .students_say .owl-carousel.owl-carousel-second .owl-nav .owl-prev span {
+    display: none;
+  }
+  .students_say .owl-carousel.owl-carousel-second .owl-nav .owl-next span {
+    display: none;
+  }
+  .students_say .owl-carousel.owl-carousel-second.owl-loaded.owl-drag {
+    margin-left: 0;
+  }
+  .Our_blog_inner {
+    text-align: center;
+  }
+  .Our_blog_inner .posts_btn {
+    flex-direction: column;
+  }
+  .Our_blog_inner .posts_btn h4 {
+    margin-bottom: 20px;
+  }
+  .Our_blog_inner .card_blog_item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Our_blog_inner .card_blog_item .card_blog_inner {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 769px) {
@@ -469,6 +500,260 @@ body {
 }
 .header_inner .menu-link-registration .menu-nav-registration:hover::before {
   background-image: url(../images/login-people-hover.svg);
+}
+
+.footer_part_1 {
+  background-color: rgb(30, 33, 44);
+  width: 100%;
+}
+.footer_part_1 .footer_item {
+  display: flex;
+  padding: 60px 0;
+  justify-content: space-between;
+}
+.footer_part_1 .footer_item .footer_title img {
+  margin-bottom: 24px;
+}
+.footer_part_1 .footer_item .footer_title p {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 0.6;
+  width: 279px;
+  margin-bottom: 38px;
+}
+.footer_part_1 .footer_item .footer_title ul {
+  display: flex;
+  gap: 20px;
+}
+.footer_part_1 .footer_item .footer_title ul li .facebook-item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/Facebook-footer_1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_title ul li .facebook-item:hover::before {
+  background-image: url(../images/Facebook-footer_2.svg);
+}
+.footer_part_1 .footer_item .footer_title ul li .twitter-item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/Twitter-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_title ul li .twitter-item:hover::before {
+  background-image: url(../images/Twitter-2.svg);
+}
+.footer_part_1 .footer_item .footer_title ul li .youtube-item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/YouTube-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_title ul li .youtube-item:hover::before {
+  background-image: url(../images/YouTube-2.svg);
+}
+.footer_part_1 .footer_item .footer_title ul li .telegram-item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/telegram-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_title ul li .telegram-item:hover::before {
+  background-image: url(../images/telegram-2.svg);
+}
+.footer_part_1 .footer_item .footer_title ul li .inst-item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/Instagram-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_title ul li .inst-item:hover::before {
+  background-image: url(../images/Instagram-2.svg);
+}
+.footer_part_1 .footer_item .footer_title ul li .linked-item::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url(../images/Linked-In-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_title ul li .linked-item:hover::before {
+  background-image: url(../images/Linked-In-2.svg);
+}
+.footer_part_1 .footer_item .footer_list {
+  display: flex;
+  gap: 79px;
+}
+.footer_part_1 .footer_item .footer_list .name_nav_footer {
+  margin-bottom: 10px;
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer_part_1 .footer_item .footer_list li {
+  margin-bottom: 8px;
+}
+.footer_part_1 .footer_item .footer_list li .link-footer-item {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #fff;
+  opacity: 0.6;
+}
+.footer_part_1 .footer_item .footer_list li .link-footer-item:hover {
+  color: #f75e05;
+}
+.footer_part_1 .footer_item .footer_list li .tel-item {
+  display: flex;
+  align-items: center;
+}
+.footer_part_1 .footer_item .footer_list li .tel-item::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/tei-item.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_list li .mail-item {
+  display: flex;
+  align-items: center;
+}
+.footer_part_1 .footer_item .footer_list li .mail-item::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/Mail-item.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_email {
+  width: 286px;
+  position: relative;
+}
+.footer_part_1 .footer_item .footer_email h4 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.footer_part_1 .footer_item .footer_email form .input_footer {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.334);
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
+  opacity: 0.6;
+  border-radius: 4px;
+  width: 100%;
+  height: 36px;
+  padding-left: 12px;
+}
+.footer_part_1 .footer_item .footer_email form .input_footer:focus {
+  opacity: 1;
+  outline: none;
+}
+.footer_part_1 .footer_item .footer_email .form_fotter_button {
+  position: absolute;
+  top: 58px;
+  right: 12px;
+  cursor: pointer;
+}
+.footer_part_1 .footer_item .footer_email .form_fotter_button::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/arrow_footer_email.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_1 .footer_item .footer_email .form_fotter_button:hover::after {
+  background-image: url(../images/arrow_footer_email2.svg);
+}
+
+.footer_part_2 {
+  background-color: rgb(52, 55, 65);
+  width: 100%;
+}
+.footer_part_2 .reserved_inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.footer_part_2 .reserved_inner .title_inner_footer {
+  display: flex;
+}
+.footer_part_2 .reserved_inner .title_inner_footer h5 {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #fff;
+  margin-right: 4px;
+}
+.footer_part_2 .reserved_inner .title_inner_footer h6 {
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #fff;
+  display: flex;
+}
+.footer_part_2 .reserved_inner .title_inner_footer h6::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  /* используем марджин-райт вместо гап */
+  background-image: url(../images/heart_footer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer_part_2 .reserved_inner .top-item {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 0.6;
 }
 
 .container {
@@ -1683,7 +1968,6 @@ body {
   font-size: 20px;
   line-height: 150%;
   color: #1e212c;
-  margin-bottom: 8px;
 }
 .Our_blog_inner .card_blog_item .card_blog_inner .blog-text {
   font-family: "latoregular";
@@ -1714,4 +1998,91 @@ body {
   background-image: url(../images/arrow-our-blog.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.email_for_Subscribe {
+  background-color: rgb(255, 217, 216);
+  position: relative;
+}
+.email_for_Subscribe .img_subscribe_1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.email_for_Subscribe .img_subscribe_2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.email_for_Subscribe .Subscribe {
+  padding: 120px 0;
+  text-align: center;
+}
+.email_for_Subscribe .Subscribe h5 {
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+.email_for_Subscribe .Subscribe h4 {
+  font-family: "latoblack";
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 66px;
+}
+.email_for_Subscribe .Subscribe .email_form_inner {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.email_for_Subscribe .Subscribe .email_form_inner form {
+  border: 1px solid #d7dadd;
+  border-radius: 4px;
+  max-width: 422px;
+  width: 100%;
+  background: #fff;
+}
+.email_for_Subscribe .Subscribe .email_form_inner form input {
+  border: transparent;
+  font-family: "latoregular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #9a9ca5;
+  border-radius: 4px;
+  width: 100%;
+  height: 52px;
+  padding-left: 10px;
+}
+.email_for_Subscribe .Subscribe .email_form_inner form input:focus {
+  color: #f75e05;
+  outline: none;
+}
+.email_for_Subscribe .Subscribe .email_form_inner .button_subscribe {
+  border: 1px solid #f75e05;
+  border-radius: 4px;
+  background-color: #f75e05;
+  color: #ffffff;
+  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 2s 1s linear;
+  padding: 0 40px;
+  font-family: "latobold";
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+.email_for_Subscribe .Subscribe .email_form_inner .button_subscribe:active {
+  color: #f75e05;
+}
+.email_for_Subscribe .Subscribe .email_form_inner .button_subscribe:hover {
+  border: 1px solid #f75e05;
+  background-color: #e5ccb1;
+  color: #f75e05;
 }/*# sourceMappingURL=style1.css.map */

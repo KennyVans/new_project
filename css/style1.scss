@@ -48,6 +48,7 @@ body{
     position: relative;
 }
 @import '_header.scss';
+@import '_footer.scss';
 .container{
     max-width: 1230px;
     margin: 0 auto;
@@ -778,6 +779,7 @@ body{
                 }
             }
         }
+        // .owl-carousel .third-carousel 
         .card_teachers{
                 display: flex;
             justify-content: space-between;
@@ -880,6 +882,7 @@ body{
         }
     }
 }
+// секция 8
 .students_say{
     background-color: #F4F5F6;
     padding-bottom: 140px;
@@ -1019,6 +1022,7 @@ body{
         padding: 66px 105px;
     }
 }
+// секция 9
 .Our_blog_inner{
     margin-bottom: 180px;
     p{
@@ -1215,7 +1219,6 @@ body{
                 font-size: 20px;
                 line-height: 150%;
                 color: #1e212c;
-                margin-bottom: 8px;
             }
             .blog-text{
                 font-family: 'latoregular';
@@ -1246,6 +1249,81 @@ body{
                     background-repeat: no-repeat;
                     background-position: center;
                 }
+            }
+        }
+    }
+}
+// 10 секция
+.email_for_Subscribe{
+    background-color: rgba(255, 217, 216, 1);
+    position: relative;
+    .img_subscribe_1{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .img_subscribe_2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .Subscribe{
+        padding: 120px 0;
+        text-align: center;
+        h5{
+            font-family: 'latobold';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            text-align: center;
+            color: #1e212c;
+            margin-bottom: 8px;
+        }
+        h4{
+            font-family: 'latoblack';
+            font-weight: 900;
+            font-size: 46px;
+            line-height: 130%;
+            text-align: center;
+            color: #1e212c;
+            margin-bottom: 66px;
+        }
+        .email_form_inner{
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            form{
+                border: 1px solid #d7dadd;
+                border-radius: 4px;
+                max-width: 422px;
+                width: 100%;
+                background: #fff;
+                input{
+                    border: transparent;
+                    font-family: 'latoregular';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 160%;
+                    color: #9a9ca5;
+                    border-radius: 4px;
+                    width: 100%;
+                    height: 52px;
+                    padding-left: 10px;
+                    &:focus{
+                        color: $orang_color;
+                        outline: none;
+                    }
+                }
+            }
+            .button_subscribe{
+                @include base_button;
+                padding: 0 40px;
+                font-family: 'latobold';
+                font-weight: 700;
+                font-size: 16px;
+                cursor: pointer;
             }
         }
     }
