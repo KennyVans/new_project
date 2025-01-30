@@ -1,5 +1,6 @@
 // ниже подключила сцсс
 @import "_fonts";
+@import "style2.scss";
 // ниже подключила на повторяющиеся цвета - переменные
 $orang_color: #f75e05;
 $white_color: #ffffff;
@@ -123,6 +124,7 @@ body{
             line-height: 150%;
             color: $dark_color;
             margin-bottom: 24px;
+            width: 175px;
             &:hover{
                 color: $orang_color;
             }

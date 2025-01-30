@@ -1,0 +1,43 @@
+.part_about_us{
+    padding-top: 200px;
+    .left-right-site{
+        display: flex;
+        justify-content: space-between;
+        div{
+            h4{
+                font-family: 'latobold';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: #1e212c;
+                margin-bottom: 8px;
+            }
+            h2{
+                font-family: 'latoblack';
+                font-weight: 900;
+                font-size: 46px;
+                line-height: 130%;
+                color: #1e212c;
+                margin-bottom: 48px;
+            }
+            .text_about_us{
+                font-family: 'latobold';
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 150%;
+                color: #1e212c;
+                margin-bottom: 24px;
+            }
+            .We_provide{
+                font-family: 'latoregular';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #424551;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

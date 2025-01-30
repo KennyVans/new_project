@@ -13,7 +13,7 @@ menuClose.addEventListener('click',()=>{
     menuShadow.classList.remove('menu--open')
 });
 // owl каручель ниже
-$('.owl-carousel.first-carousel')
+$(".owl-carousel.first-carousel")
 .owlCarousel({ 
     autoplay:true, 
     autoplayTimeout: 5500, 
